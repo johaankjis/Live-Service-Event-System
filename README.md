@@ -118,7 +118,7 @@ pnpm install
 npm install --legacy-peer-deps
 ```
 
-**Note**: Use `--legacy-peer-deps` flag with npm due to React 19 compatibility with some dependencies.
+**Note**: The `--legacy-peer-deps` flag is required with npm due to React 19 compatibility issues with some UI dependencies (specifically `vaul` which currently only supports React 16-18). This flag allows npm to ignore peer dependency conflicts while the library ecosystem catches up to React 19.
 
 3. Run the development server:
 ```bash
