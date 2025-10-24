@@ -115,8 +115,10 @@ cd Live-Service-Event-System
 ```bash
 pnpm install
 # or
-npm install
+npm install --legacy-peer-deps
 ```
+
+**Note**: Use `--legacy-peer-deps` flag with npm due to React 19 compatibility with some dependencies.
 
 3. Run the development server:
 ```bash
